@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-Нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>Крестики-Нолики</h1>
+    <div class="mode-selection">
+        <button onclick="startGame('friend')">Играть с другом</button>
+        <button onclick="chooseBotDifficulty()">Играть с ботом</button>
+    </div>
+    <div id="difficulty-selection" style="display: none;">
+        <button onclick="startGame('bot', 'easy')">Легкий</button>
+        <button onclick="startGame('bot', 'medium')">Средний</button>
+        <button onclick="startGame('bot', 'hard')">Сложный</button>
+    </div>
+    <div id="status"></div>
+    <div id="board" class="board"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
